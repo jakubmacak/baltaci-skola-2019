@@ -4,3 +4,4 @@
 - úvod do PHP: https://docs.google.com/presentation/d/1r8vfpvZi8h2Pc9NYDBgbDO9URzpuvV5qVTVhlxQLOc0
 - XAMPP: https://www.apachefriends.org/index.html
 - samostatná práce - [úvod do PHP](ukol-php.md)
+- KDO NEPOSLAL ÚKOL - poslední šance do 3.10.2019 do 23:59
