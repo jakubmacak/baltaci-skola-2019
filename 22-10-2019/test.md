@@ -19,4 +19,4 @@ Vytvorte podminku, ktera vypise:
  - promennou **obsah** do html elementu **div** v kazdem jinem pripade.
 Hint: Pouzijte operator konkatenace.
 
-Reseni poslat na macak@priasystem.cz
+Reseni poslat na macak@priasystem.cz s predmetem **Test 22-10-2019**
