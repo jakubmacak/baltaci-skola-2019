@@ -1,8 +1,7 @@
 # Domácí úkol
-- odevzdat do 28.10.2019 do 12:00
+- odevzdat do 5.11.2019 do 9:00
 - poslat soubor .php e-mailem na macak@priasystem.cz
 - úkol bude hodnocen známkou, tj. NEJEDNÁ se o dobrovolný úkol
-- možnost odevzdat úkol bude jen jedna
 - dotazy pište na e-mail macak@priasystem.cz
 - jedná se o dvě jednoduché funkce, velmi podobné jsme zkoušeli na poslední hodině
 
