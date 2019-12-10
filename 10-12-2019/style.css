@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.container{
+    max-width: 750px;
+    margin: auto;
+    padding: 20px;
+    background: #eee;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+}
+
+.type-radio label,
+.type-checkbox label{
+    display: inline-block;
+}
+
+.form-group-text input,
+.form-group-text textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 30px;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 250px;
+    margin: 10px auto;
+    height: 30px;
+    background: black;
+    color: white;
+    border: none;
+}
+
+.type-radio,
+.type-checkbox{
+    margin-bottom: 10px;
+}
+
+.validation {
+    padding: 20px;
+    margin: 5px;
+    border-radius: 3px;
+    border: 1px solid;
+}
+
+.sucess {
+    border-color: #26ab43;
+    background-color: #d6ffdf;
+}
+
+.error {
+    border-color: #f21f1f;
+    background-color: #ebd3d3;
+}
+
+© 2019 GitHub, Inc.
