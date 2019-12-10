@@ -5,6 +5,7 @@ Napište funkci `arrayProduct`
 - funkce bude mít jeden parametr, a to pole ve tvaru `[ ['cislo' => 5], ['cislo' => 4 ] ]`
 - funkce provede **násobení** všech hodnot v jednotlivých polích na pozici `cislo`, tj. pro výše uvedené pole bude výsledek 20
 - otestujte, zda funkce vrací hodnoty dle komentáře v zadání testu
+- použijte `for` cyklus
 - pozor: inicializujte správně proměnnou pro průběžný součin
 
 Napište funkci `arrayLengthToString`
