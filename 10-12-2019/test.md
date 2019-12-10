@@ -14,3 +14,7 @@ Napište funkci `arrayLengthToString`
 - argument `text` bude nepovinný a bude mít defaultní hodnotu "délka pole"
 - funkce bude vracet řetězec: `text: DELKA`, kde `DELKA` bude skutečná délka pole `pole` a `text` bude obsah proměnné `text` (tj. defaultní hodnota nebo jiná hodnota, pokud funkci předáme dva argumenty)
 - otestujte, zda funkce vrací řetězec dle komentáře v zadání testu
+
+Odeslat
+---
+Na macak@priasystem.cz
