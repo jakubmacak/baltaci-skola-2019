@@ -28,6 +28,11 @@ ini_set('display_errors', '1');
     <div class="container">
 
         <?php
+            $name = '';
+            $surname = '';
+            $email = '';
+            $phone = '';
+
             // TODO: kod muzete doplnovat napriklad zde
             if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 $errors = [];
@@ -42,10 +47,14 @@ ini_set('display_errors', '1');
                     $errors[] = "Pole prijmeni nebylo vyplneno spravne";
                 }
 
-                // todo: vlozeni hlasky do pole
                 $email = $_POST["email"];
                 if (!overEmail($email)) {
                     $errors[] = "Pole email neni spravne vyplneno";
+                }
+
+                $phone = $_POST["phone"];
+                if (!overTelefon($phone)) {
+                    $errors[] = "Pole telefon neni spravne vyplneno";
                 }
 
                 for($i = 0; $i < count($errors); $i++) {
@@ -67,28 +76,47 @@ ini_set('display_errors', '1');
             }
 
             function overEmail($email) {
-                return strlen(trim($email)) !== 0;
+                if (strlen(trim($email)) === 0) {
+                    return false;
+                }
+                if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                    return false;
+                }
+                return true;
+            }
+
+            function overTelefon($telefon) {
+                if (strlen(trim($telefon)) === 0) {
+                    return false;
+                }
+                //if ($telefon[0] !== '+') {
+                //    return false;
+                //}
+                if (substr($telefon, 0, 1) !== '+') {
+                    return false;
+                }
+                return true;
             }
 
         ?>
 
         <h1>Kontaktní formulář</h1>
-        <form action="formular.php" method="POST">
+        <form action="formular.php" method="POST" novalidate>
             <div class="form-group form-group-text">
                 <label for="name">Jméno</label>
-                <input class="form-control" type="text" id="name" name="name">
+                <input class="form-control" type="text" id="name" name="name" value="<?php echo $name; ?>">
             </div>
             <div class="form-group form-group-text">
                 <label for="surname">Příjmení</label>
-                <input type="text" id="surname" name="surname">
+                <input type="text" id="surname" name="surname" value="<?php echo $surname; ?>">
             </div>
             <div class="form-group form-group-text">
                 <label for="email">E-mail</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" value="<?php echo $email; ?>">
             </div>
             <div class="form-group form-group-text">
                 <label for="phone">Telefon</label>
-                <input type="text" id="phone">
+                <input type="text" id="phone" name="phone" value="<?php echo $phone; ?>">
             </div>
             <div class="form-group form-group-text">
                 <label for="msg">Zpráva</label>
