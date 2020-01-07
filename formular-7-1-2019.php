@@ -32,6 +32,7 @@ ini_set('display_errors', '1');
             $surname = '';
             $email = '';
             $phone = '';
+            $contact = [];
 
             // TODO: kod muzete doplnovat napriklad zde
             if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -53,13 +54,28 @@ ini_set('display_errors', '1');
                 }
 
                 $phone = $_POST["phone"];
-                if (!overTelefon($phone)) {
-                    $errors[] = "Pole telefon neni spravne vyplneno";
-                }
 
-                for($i = 0; $i < count($errors); $i++) {
-                    echo '<div class="error">'.$errors[$i].'</div>';
-                }
+                if (array_key_exists("contact", $_POST)) { // kontrola, jestli byl nejaky checkbox oznacen
+	                $contact = $_POST["contact"];
+	                if (in_array('telefon', $contact)) { // kontrola, jeslti se v poli nachazi retezec telefon
+	                	if (!overTelefon($phone)) {
+							$errors[] = "Pole telefon neni spravne vyplneno";
+						}
+	                };
+            	}
+
+            	if (!overPohlavi($_POST)) {
+            		$errors[] = 'Pole pohlavi nebylo spravne vyplneno';
+            	}
+
+        		if (count($errors) === 0) {
+        			echo '<div class="success">Formular byl odeslan</div>';
+        		} else {
+	                for($i = 0; $i < count($errors); $i++) {
+	                    echo '<div class="error">'.$errors[$i].'</div>';
+	                }
+	            }
+
             }
 
             function overJmeno($jmeno) {
@@ -98,6 +114,15 @@ ini_set('display_errors', '1');
                 return true;
             }
 
+            function overPohlavi($post) {
+            	// if (array_key_exists('gender', $post)) {
+            	// 	return true;
+            	// } else {
+            	// 	return false;
+            	// }
+            	return array_key_exists('gender', $post);	
+            }
+
         ?>
 
         <h1>Kontaktní formulář</h1>
@@ -125,11 +150,11 @@ ini_set('display_errors', '1');
             <div class="form-group">
                 <h2>Kontaktujte mě</h2>
                 <div class="type-checkbox">
-                    <input id="checkbox-email" type="checkbox" value="E-mail">
+                    <input id="checkbox-email" type="checkbox" value="email" name="contact[]">
                     <label for="checkbox-email">E-mail</label>
                 </div>
                 <div class="type-checkbox">
-                    <input id="checkbox-phone" type="checkbox" value="Telefon">
+                    <input id="checkbox-phone" type="checkbox" value="telefon" name="contact[]">
                     <label for="checkbox-phone">Telefon</label>
                 </div>
             </div>
