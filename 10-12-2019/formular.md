@@ -10,7 +10,7 @@ Vasim hlavnim ukolem je promenit statickou html stranku, nachazejici se v soubor
 1. Jmeno nesmi byt prazne
 2. Prijmeni nesmi byt prazne
 3. Email musi obsahovat znak '@' a znak '.' v tomto poradi. Email muze byt prazdny.
-4. Telefon musi zacinat znakem '+' a musi obsahovat pouze cisla s vyjimkou prvniho znaku. Zaroven validace musi ignorovat mezery (tj. mezery se nepocitaji mezi neplatne znaky). Priklady validnich hodnot tedy jsou: "+420777666555" stejne jako "+420 777 666 555". Telefon muze byt prazdny.
+4. Telefon musi zacinat znakem '+'. Telefon muze byt prazdny.
 5. Alespon jedna z hodnot v sekci `Kontaktuj me` musi byt vybrana.
 6. Pokud je v sekci `Kontaktuj me` vybrana moznost `E-mail`, pak musi byt v policku `E-mail` zadan platny email.
 7. Pokud je v sekci `Kontaktuj me` vybrana moznost `Telefon`, pak musi byt v policku `Telefon` zadan platny telefon.
