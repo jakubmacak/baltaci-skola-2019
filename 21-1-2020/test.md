@@ -5,3 +5,4 @@
 - na konec formuláře vložte potvrzovací tlačítko
 - po odeslání formuláře získejte hodnoty z polí username a domain
 - získané hodnoty vypište tak, aby finální řetězec vypadal jako username@domain - tj. spojíte získané hodnoty znakem zavináč
+- poslat na macak@priasystem.cz
