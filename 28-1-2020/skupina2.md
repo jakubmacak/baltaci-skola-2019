@@ -10,4 +10,4 @@ Vytvořte jednoduchou stránku:
 - připravte odeslání formuláře tak, aby se zadané hodnoty vypsaly do tabulky
 - jméno i text musí být vyplněno, jinak se zobrazí chybová hláška s varováním, že je potřeba vyplnit všechna pole
 - nastylujte stránku pomocí CSS
-- výsledek pošlete do 2.2. 12:00 na e-mail ----
+- výsledek pošlete do 2.2. 12:00 na e-mail mjanousek92@gmail.com
