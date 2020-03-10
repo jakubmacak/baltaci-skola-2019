@@ -4,3 +4,5 @@
 4. Napište dotaz, který vybere všechny položky objednávky, které mají ve svém názvu slabiku "va".
 5. Napište dotaz, který vybere všechny objednávky, které byly vytvořeny po 10.2.2020 20:10:00.
 6. Bonusový úkol - za extra 1: Napište dotaz, který vypíše názvy všech položek objednávky uživatele Přemek Podlaha (použijte JOIN).
+
+Pošlete SQL dotazy jako textový soubor nebo je vložte přímo do e-mailu - poslat na macak@priasystem.cz.
