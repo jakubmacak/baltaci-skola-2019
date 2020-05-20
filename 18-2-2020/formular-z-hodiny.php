@@ -110,6 +110,7 @@ ini_set('display_errors', '1');
 
         // Vykonani SQL prikazu
         vykonejSQLInsert($connection, $sql);
+        header('restaurace.php');
 
     }
 
