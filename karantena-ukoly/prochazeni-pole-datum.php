@@ -1,3 +1,5 @@
+<?php
+
 // pole, kam se budou ukladat jednotlive dny (datum je klic v poli)
 $podleDne = [];
 if (mysqli_num_rows($result) === 0) {
